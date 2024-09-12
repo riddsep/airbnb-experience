@@ -8,7 +8,7 @@
 }
 
 .card {
-  width: 40%;
+  width: 175px;
   flex-shrink: 0;
 }
 .card-image {
