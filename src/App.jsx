@@ -10,7 +10,7 @@ function App() {
       <Hero />
       <div className="card-container">
         <Card
-          img="assets/card-1.png"
+          img="./assets/card-1.png"
           status="SOLD OUT"
           rating="5.0"
           count="6"
@@ -19,7 +19,7 @@ function App() {
           price="136"
         />
         <Card
-          img="assets/card-2.png"
+          img="./assets/card-2.png"
           status="ONLINE"
           rating="5.0"
           count="30"

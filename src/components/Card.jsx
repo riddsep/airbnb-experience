@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "../components/css-modules/Card.css";
-import Star from "../../public/assets/star.svg";
+import Star from "../assets/star.svg";
 
 function Card(props) {
   const { img, status, rating, count, country, title, price } = props;
