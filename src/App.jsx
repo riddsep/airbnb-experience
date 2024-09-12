@@ -2,6 +2,9 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
+import CardImg1 from "./assets/card-1.png";
+import CardImg2 from "./assets/card-2.png";
+import CardImg3 from "./assets/card-3.png";
 
 function App() {
   return (
@@ -10,7 +13,7 @@ function App() {
       <Hero />
       <div className="card-container">
         <Card
-          img="./assets/card-1.png"
+          img={CardImg1}
           status="SOLD OUT"
           rating="5.0"
           count="6"
@@ -19,7 +22,7 @@ function App() {
           price="136"
         />
         <Card
-          img="./assets/card-2.png"
+          img={CardImg2}
           status="ONLINE"
           rating="5.0"
           count="30"
@@ -28,7 +31,7 @@ function App() {
           price="125"
         />
         <Card
-          img="./assets/card-3.png"
+          img={CardImg3}
           rating="4.8"
           count="2"
           country="IDN"
