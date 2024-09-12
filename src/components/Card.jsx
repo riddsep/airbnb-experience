@@ -8,7 +8,7 @@ function Card(props) {
     <div className="card">
       <div className="card-image">
         {status && <p>{status}</p>}
-        <img src={img} alt="" />
+        <img src={img} alt="" loading="lazy" />
       </div>
       <div className="card-info">
         <div className="card-rating">
