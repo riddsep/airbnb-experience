@@ -7,7 +7,7 @@ function Card(props) {
   return (
     <div className="card">
       <div className="card-image">
-        {openSpot && <p>{openSpot}</p>}
+        {(openSpot > 0 && <p>ONLINE</p>) || (openSpot === 0 && <p>SOLD OUT</p>)}
         <img src={coverImg} alt="" loading="lazy" />
       </div>
       <div className="card-info">
