@@ -3,20 +3,20 @@ import "../components/css-modules/Card.css";
 import Star from "../assets/star.svg";
 
 function Card(props) {
-  const { img, status, rating, count, country, title, price } = props;
+  const { coverImg, openSpot, stats, location, title, price } = props;
   return (
     <div className="card">
       <div className="card-image">
-        {status && <p>{status}</p>}
-        <img src={img} alt="" loading="lazy" />
+        {openSpot && <p>{openSpot}</p>}
+        <img src={coverImg} alt="" loading="lazy" />
       </div>
       <div className="card-info">
         <div className="card-rating">
           <img src={Star} alt="" />
-          {rating}
+          {stats.rating}
           <span>
             {" "}
-            ({count}) &#x2022; {country}
+            ({stats.reviewCount}) &#x2022; {location}
           </span>
         </div>
         <div className="card-title">
