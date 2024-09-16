@@ -3,11 +3,12 @@ import "../components/css-modules/Card.css";
 import Star from "../assets/star.svg";
 
 function Card(props) {
-  const { coverImg, openSpot, stats, location, title, price } = props;
+  const { coverImg, openSpots, stats, location, title, price } = props;
   return (
     <div className="card">
       <div className="card-image">
-        {(openSpot > 0 && <p>ONLINE</p>) || (openSpot === 0 && <p>SOLD OUT</p>)}
+        {(openSpots > 0 && <p>ONLINE</p>) ||
+          (openSpots === 0 && <p>SOLD OUT</p>)}
         <img src={coverImg} alt="" loading="lazy" />
       </div>
       <div className="card-info">
